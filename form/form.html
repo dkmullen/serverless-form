@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Serverless Form</title>
+</head>
+<body>  
+    <section class="section">
+        <div class="container">
+          <h1 class="title">Contact Us</h1>
+            <form id="contactForm">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" id="name" placeholder="Your Name" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Your Email Address</label>
+                    <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="you@example.com" id="email" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    </div>
+                    <!-- <p class="help is-danger">This email is invalid</p> -->
+                </div>
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                    <textarea class="textarea" id="content" required></textarea>
+                    </div>
+                </div>
+                <div id="toast"></div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                    <button class="button is-link" id="submit">Submit</button>
+                    </div>
+                </div>
+            </form> 
+            </div>
+            </section>
+    <script src="form.js"></script>
+</body>
+</html>
